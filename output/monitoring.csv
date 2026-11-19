@@ -1,0 +1,13 @@
+time,db,app,proxy,http_status
+2026-10-25T10:29:08Z,running,running,running,200
+2026-10-25T10:29:18Z,running,running,running,200
+2026-10-25T10:29:28Z,running,running,running,200
+2026-10-25T10:29:38Z,running,running,running,200
+2026-10-25T10:29:48Z,exited,running,running,no_response
+2026-10-25T10:29:58Z,exited,running,running,no_response
+2026-10-25T10:30:08Z,exited,running,running,no_response
+2026-10-25T10:30:18Z,exited,running,running,no_response
+2026-10-25T10:30:28Z,running,running,running,200
+2026-10-25T10:30:38Z,running,running,running,200
+2026-10-25T10:30:48Z,running,running,running,200
+2026-10-25T10:30:58Z,running,running,running,200

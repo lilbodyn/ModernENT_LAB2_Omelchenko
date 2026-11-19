@@ -1,0 +1,7 @@
+﻿check,result,details
+ssh_docker_access,PASS,omelchenko@127.0.0.1:2222; Docker Engine 29.8.1
+cli_inventory,PASS,контейнерів: 0
+api_inventory,PASS,контейнерів: 0
+network_policy,FAIL,У проєкті немає контейнера веб-проксі 'proxy'
+http_chain,PASS,"запит 1: HTTP 200, 16.4 мс, visits=21; запит 2: HTTP 200, 14.0 мс, visits=22; лічильник зріс на 1"
+cli_api_compare,PASS,знімки CLI та API збігаються

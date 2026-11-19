@@ -1,0 +1,11 @@
+﻿check,result,details
+ssh_docker_access,PASS,omelchenko@127.0.0.1:2222; Docker Engine 29.8.1
+cli_inventory,PASS,контейнерів: 3
+api_inventory,PASS,контейнерів: 3
+network_table:lab1_lab1-net,INFO,app=172.28.0.3; db=172.28.0.2; proxy=172.28.0.4
+network_policy,PASS,відповідає вимогам: порт на хості лише у веб-проксі
+http_chain,PASS,"запит 1: HTTP 200, 25.4 мс, visits=25; запит 2: HTTP 200, 5.0 мс, visits=26; лічильник зріс на 1"
+cli_api_compare,PASS,знімки CLI та API збігаються
+compare:app,PASS,"склад, стан, мережі та порти збігаються"
+compare:db,PASS,"склад, стан, мережі та порти збігаються"
+compare:proxy,PASS,"склад, стан, мережі та порти збігаються"

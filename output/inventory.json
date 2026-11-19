@@ -1,0 +1,88 @@
+{
+  "cli": {
+    "source": "cli",
+    "hostname": "omelchenko-vm",
+    "compose_project": "lab1",
+    "collected_at": "2026-10-25T19:13:31Z",
+    "containers": [
+      {
+        "service": "app",
+        "id": "cc3b8fc43dbcff3ef9204c6333f03b8c1ea52f77b0dee5b3ceb93f777ba88336",
+        "image": "lab1-app:1.0",
+        "state": "running",
+        "started_at": "2026-10-25T10:00:05.283082Z",
+        "networks": {
+          "lab1_lab1-net": "172.28.0.3"
+        },
+        "ports": []
+      },
+      {
+        "service": "db",
+        "id": "122d4ef22877e5827b56e0cec8f46b450bf936f980b679d4fcb0ebf000d60f98",
+        "image": "redis:7-alpine",
+        "state": "running",
+        "started_at": "2026-10-25T10:30:25.433160Z",
+        "networks": {
+          "lab1_lab1-net": "172.28.0.2"
+        },
+        "ports": []
+      },
+      {
+        "service": "proxy",
+        "id": "866d6a84a32cf46fda3b975b77684bddd56792ef8b4d93b3b4b72053cb514f48",
+        "image": "nginx:1.27-alpine",
+        "state": "running",
+        "started_at": "2026-10-25T10:00:05.694030Z",
+        "networks": {
+          "lab1_lab1-net": "172.28.0.4"
+        },
+        "ports": [
+          "8080->80/tcp"
+        ]
+      }
+    ]
+  },
+  "api": {
+    "source": "api",
+    "hostname": "omelchenko-vm",
+    "compose_project": "lab1",
+    "collected_at": "2026-10-25T19:13:32Z",
+    "containers": [
+      {
+        "service": "app",
+        "id": "cc3b8fc43dbcff3ef9204c6333f03b8c1ea52f77b0dee5b3ceb93f777ba88336",
+        "image": "lab1-app:1.0",
+        "state": "running",
+        "started_at": "2026-10-25T10:00:05.283082Z",
+        "networks": {
+          "lab1_lab1-net": "172.28.0.3"
+        },
+        "ports": []
+      },
+      {
+        "service": "db",
+        "id": "122d4ef22877e5827b56e0cec8f46b450bf936f980b679d4fcb0ebf000d60f98",
+        "image": "redis:7-alpine",
+        "state": "running",
+        "started_at": "2026-10-25T10:30:25.433160Z",
+        "networks": {
+          "lab1_lab1-net": "172.28.0.2"
+        },
+        "ports": []
+      },
+      {
+        "service": "proxy",
+        "id": "866d6a84a32cf46fda3b975b77684bddd56792ef8b4d93b3b4b72053cb514f48",
+        "image": "nginx:1.27-alpine",
+        "state": "running",
+        "started_at": "2026-10-25T10:00:05.694030Z",
+        "networks": {
+          "lab1_lab1-net": "172.28.0.4"
+        },
+        "ports": [
+          "8080->80/tcp"
+        ]
+      }
+    ]
+  }
+}
